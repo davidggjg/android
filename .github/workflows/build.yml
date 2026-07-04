@@ -21,9 +21,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Generate Gradle wrapper
-        uses: gradle/actions/wrapper-validation@v4
-
       - name: Install Gradle
         uses: gradle/actions/setup-gradle@v4
 
