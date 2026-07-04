@@ -13,12 +13,34 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/statusText"
+    <Button
+        android:id="@+id/pickFileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="בחר קובץ APK/ZIP" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="בחרו קובץ ZIP לעריכה"
-        android:textSize="16sp" />
+        android:text="בחרו קובץ ZIP/APK לעריכה"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/fileListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textIsSelectable="true" />
+    </ScrollView>
 
 </LinearLayout>
