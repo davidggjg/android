@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
+import com.mtmanagerpro.R
 import com.mtmanagerpro.zipeditor.ZipExtractor
 import java.io.File
 
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // setContentView(R.layout.activity_main) - יש להוסיף layout בפועל
+        setContentView(R.layout.activity_main)
     }
 
     /** דוגמה: פתיחת ZIP גדול, חילוץ, פתיחה ב-EditorActivity */
